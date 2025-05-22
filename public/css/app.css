@@ -1,0 +1,59 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Styles pour l'application de gestion de tâches */
+body {
+    background-color: #3b82f6; /* Fond bleu */
+    font-weight: bold; /* Écriture en gras */
+    font-size: 16px; /* Taille de police 16px */
+    color: white; /* Texte blanc pour contraster avec le fond bleu */
+    font-family: Arial, sans-serif; /* Police par défaut */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Optionnel : Styles pour améliorer la lisibilité */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styles pour les liens */
+a {
+    color: #fbbf24; /* Jaune pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #f59e0b;
+    text-decoration: underline;
+}
+
+/* Styles pour les boutons */
+button, .btn {
+    background-color: #1d4ed8;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    background-color: #1e40af;
+}
